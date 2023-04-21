@@ -503,6 +503,85 @@ address {
   fill: #f4f4fd;
 }
 
+.subscribe {
+  margin-left: 80px;
+}
+.subscribe-form {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.text-subscribe {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16px);
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.subscribe-email {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2e2f42;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.subscribe-email:focus {
+  outline: transparent;
+}
+.subscribe-email::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.subscribe-btn {
+  width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  border: none;
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 8px 24px;
+}
+.subscribe-text-icon {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.airplane {
+}
+.subscribe-btn:hover {
+  background-color: #404bbf;
+}
+.subscribe-btn:focus {
+  background-color: #404bbf;
+}
+
 /**--------------------------Second page------------------------*/
 
 /**-----------------------PORTFOLIO HEADER-------------------*/
@@ -775,7 +854,7 @@ address {
 
 .modal {
   width: 408px;
-  min-height: 576px;
+  min-height: 584px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -803,6 +882,8 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover {
@@ -824,4 +905,173 @@ address {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.backdrop-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.backdrop-form {
+  width: 360px;
+  height: 336px;
+}
+
+.input-labels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.backdrop-input {
+  width: 360px;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding: 8px 38px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  outline: transparent;
+  transition: border-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-input-1 {
+  width: 360px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  outline: transparent;
+  transition: border-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-input:focus {
+  border-color: #4d5ae5;
+}
+
+.backdrop-input:focus + .input-icon {
+  fill: #4d5ae5;
+}
+
+.backdrop-input-1:focus {
+  border-color: #4d5ae5;
+}
+
+.button-wrap-backdrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+.backdrop-button {
+  width: 169px;
+  height: 56px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  transition: backgroun-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-button:hover {
+  background-color: #404bbf;
+}
+.backdrop-button:focus {
+  background-color: #404bbf;
+}
+
+.names-label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.backdrop-label span {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-check {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.check-btn {
+}
+
+.privacy-information {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: flex;
+  align-items: center;
+}
+
+.privacy-information::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.check-btn:checked + .privacy-information:before {
+  background-image: url(../images/Vector-1.svg);
+  background-color: #404bbf;
+  background-position: center;
+  background-repeat: no-repeat;
 }
