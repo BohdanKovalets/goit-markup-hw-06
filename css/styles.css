@@ -863,7 +863,7 @@ address {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms linear;
-  padding: 72px 24px;
+  padding: 72px 24px 24px;
 }
 
 .backdrop.is-hidden .modal {
@@ -881,7 +881,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms, fill 250ms;
+  transition: background-color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   top: 24px;
@@ -901,6 +901,11 @@ address {
 
 .modal-button:focus > .modal-icon {
   fill: #ffffff;
+}
+
+.modal-icon {
+  transition: fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -956,7 +961,6 @@ address {
   outline: transparent;
   transition: border-color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 16px;
   display: block;
 }
 
@@ -993,7 +997,7 @@ address {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  transition: backgroun-color 250ms;
+  transition: background-color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1012,11 +1016,18 @@ address {
   line-height: calc(14 / 12);
   letter-spacing: 0.04em;
   color: #8e8f99;
+  margin-bottom: 4px;
+  display: block;
 }
 
 .backdrop-label {
   display: block;
   margin-bottom: 8px;
+}
+
+.backdrop-label-1 {
+  display: block;
+  margin-bottom: 16px;
 }
 
 .input-wrap {
@@ -1052,7 +1063,11 @@ address {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   position: absolute;
-  left: 22px;
+  left: 24px;
+}
+.privacy-information::before {
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .privacy-information {
@@ -1072,6 +1087,9 @@ address {
   background-color: #404bbf;
   background-position: center;
   background-repeat: no-repeat;
+  border: 1px solid #404bbf;
+  position: absolute;
+  left: 24px;
 }
 .privacy-policy {
   margin-left: 4px;
